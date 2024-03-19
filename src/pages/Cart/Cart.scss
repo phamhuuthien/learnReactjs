@@ -1,0 +1,40 @@
+.cart {
+    margin: 20px 0;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__image {
+        width: 100px;
+        aspect-ratio: 4/3;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        margin-left: 20px;
+        flex: 1;
+    }
+
+    &__quantity {
+        margin-right: 20px;
+
+        input {
+            width: 40px;
+            margin: 0 5px;
+        }
+    }
+
+    &__price--old {
+        text-decoration: line-through;
+    }
+}

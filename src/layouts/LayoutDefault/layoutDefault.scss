@@ -1,0 +1,67 @@
+.layout-default {
+    &__header {
+        padding: 20px 20px;
+        background-color: orange;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+
+
+    &__main {
+        padding: 20px;
+    }
+
+    &__footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.menu {
+    ul {
+        display: flex;
+        color: black;
+        list-style: none;
+
+        li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &--active {
+            color: white;
+        }
+    }
+
+    &__sub {
+        position: absolute;
+        display: none !important;
+        flex-direction: column;
+        top: 100%;
+        right: 0;
+        background-color: antiquewhite;
+        padding: 0 !important;
+
+        li {
+            margin-left: 0 !important;
+
+            padding: 10px 20px;
+        }
+
+    }
+
+    li:hover>&__sub {
+        display: flex !important;
+    }
+}
